@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="OpenGraphSnippet" default="dist">
+
+    <property name="version" value="1.0" />
+    <property name="pluginName" value="opengraphsnippet" />
+    <fileset dir="." id="allFiles">
+        <include name="${pluginName}.php" />
+        <include name="${pluginName}.xml" />
+        <include name="index.html" />
+    </fileset>
+
+    <target name="dist">
+        <echo msg="Creating archive..." />
+
+        <zip destfile="./${pluginName}-${version}.zip">
+            <fileset refid="allFiles" />
+        </zip>
+
+        <echo msg="archive created OK!" />
+    </target>
+</project>

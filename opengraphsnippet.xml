@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content">
+  <name>Content - Open Graph Snippet</name>
+  <author>sunkid</author>
+  <creationDate>September 22nd, 2015</creationDate>
+  <copyright>Sunkid Webdesign</copyright>
+  <license>GNU General Public License</license>
+  <authorEmail>sunkid@iminurnetz.com</authorEmail>
+  <authorUrl>http://www.iminurnetz.com</authorUrl>
+  <version>1.0</version>
+  <description>A content plugin that pulls Open Graph information from a URL.</description>
+  <files>
+    <filename plugin="opengraphsnippet">opengraphsnippet.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="cats"
+        	   type="category"
+        	   extension="com_content"
+        	   label="Categories"
+        	   description="Categories to include plugin"
+        	   multiple="true" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>
